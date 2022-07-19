@@ -101,7 +101,7 @@ function Course(props) {
                               <h6>
                                  {course.incompatibleWith &&
                                     course.incompatibleWith.map((c) => (
-                                       <HashLink smooth to={'#' + c} className={'p-0 m-0'}>
+                                       <HashLink key={'to-' + c} smooth to={'#' + c} className={'p-0 m-0'}>
                                           {c}
                                        </HashLink>
                                     ))}

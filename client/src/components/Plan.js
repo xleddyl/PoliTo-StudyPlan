@@ -19,8 +19,8 @@ function Plan(props) {
    const [courses, setCourses] = useState(props.courses)
    const [errMsg, setErrMsg] = useState('')
    const [studyPlanCodes, setStudyPlanCodes] = useState(studyPlan.map((course) => course.code))
-   //const [inPlanCourses, setInPlanCourses] = useState()
-   //const [offPlanCourses, setOffPlanCourses] = useState()
+
+
    const credits = courses
       .filter((course) => studyPlanCodes.includes(course.code))
       .reduce((tot, course) => tot + course.credits, 0)
@@ -81,6 +81,7 @@ function Plan(props) {
       if (!err) {
          setErrMsg(String(''))
          setSidebarButtonState(true)
+         setStudyPlanCodes([])
          navigate('/plan')
       } else {
          setErrMsg(String(err))

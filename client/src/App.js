@@ -93,9 +93,9 @@ function App() {
 
    const deletePlan = async () => {
       try {
-         await StudyPlanAPI.deleteStudyPlan()
-         const user = await LoginAPI.refresh()
+         const tmp = await StudyPlanAPI.deleteStudyPlan()
          const courses = await CourseAPI.getCourses()
+         const user = await LoginAPI.refresh()
          setStudyPlan([])
          setCourses(courses)
          setAuth({

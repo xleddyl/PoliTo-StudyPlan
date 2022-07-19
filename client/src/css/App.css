@@ -1,0 +1,89 @@
+#root {
+   height: 101vh;
+}
+
+.accordion-item {
+   border: none;
+   box-shadow: 0px 0px 11px 1px #8d8d8d6b;
+}
+
+.code {
+   font-weight: 500;
+   color: grey;
+}
+
+.button {
+   width: 30px;
+   height: 30px;
+}
+
+.disabled .button {
+   cursor: not-allowed !important;
+   pointer-events: all !important;
+}
+
+.full {
+   color: red;
+}
+svg.full:hover {
+   color: rgb(129, 0, 0);
+}
+
+.available {
+   color: green;
+}
+svg.available:hover {
+   color: rgb(0, 79, 0);
+}
+
+.wip {
+   color: orange;
+}
+
+.user-profile,
+.create-plan,
+.toolbar {
+   border: 4px dashed #c5c5c5;
+   border-radius: 15px;
+   padding: 25px;
+}
+
+.disabled .accordion-button,
+.disabled .accordion-collapse {
+   background: rgba(255, 0, 0, 0.156);
+}
+
+.propic {
+   width: 6vmax;
+}
+
+.create-plan .btn-secondary {
+   background-color: #c5c5c5;
+   border-color: #c5c5c5;
+}
+
+.create-plan .btn-secondary:hover {
+   background-color: #a3a3a3;
+   border-color: #a3a3a3;
+}
+
+.create-plan {
+   transition: all 0.2s;
+   height: 100%;
+   color: #c5c5c5;
+}
+
+.empty-list {
+   height: 50%;
+   color: #c5c5c5;
+}
+
+.cant-be-added {
+   color: rgba(255, 0, 0, 0.597);
+   font-weight: 500;
+}
+
+.footer {
+   background-color: #ebebeb;
+   color: rgb(172, 172, 172);
+}

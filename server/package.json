@@ -1,0 +1,24 @@
+{
+  "name": "server",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Edoardo Alberti S305922",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.2",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "express-validator": "^6.14.1",
+    "morgan": "^1.10.0",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "sqlite3": "^5.0.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "buildDb": "rm -r db/database.db; sqlite3 db/database.db < db/database.sql"
+  }
+}

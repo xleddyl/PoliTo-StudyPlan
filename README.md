@@ -1,9 +1,10 @@
 # Exam #1: "StudyPlan"
 
-## Commands for running both the server and client
+## Commands for running the server and the client
 
-`cd server; npm i; npm start`
-`cd client; npm i; npm start`
+server: `cd server; npm i; npm start`
+
+client: `cd client; npm i; npm start`
 
 ## React Client Application Routes
 
